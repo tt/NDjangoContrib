@@ -2,6 +2,9 @@
 
 namespace NDjango.Contrib.Filters.Humanize
 {
+	/// <remarks>
+	/// http://docs.djangoproject.com/en/dev/ref/contrib/humanize/#naturalday
+	/// </remarks>
 	public class NaturalDayFilter : Interfaces.IFilter
 	{
 		#region IFilter Members

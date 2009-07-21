@@ -2,6 +2,9 @@
 
 namespace NDjango.Contrib.Filters.Humanize
 {
+	/// <remarks>
+	/// http://docs.djangoproject.com/en/dev/ref/contrib/humanize/#ordinal
+	/// </remarks>
 	public class OrdinalFilter : Interfaces.ISimpleFilter
 	{
 		#region ISimpleFilter Members
