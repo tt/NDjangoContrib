@@ -5,7 +5,7 @@ namespace NDjango.Contrib.Filters.Humanize
 	/// <remarks>
 	/// http://docs.djangoproject.com/en/dev/ref/contrib/humanize/#intcomma
 	/// </remarks>
-	public class IntComma : Interfaces.ISimpleFilter
+	public class IntCommaFilter : Interfaces.ISimpleFilter
 	{
 		#region ISimpleFilter Members
 
