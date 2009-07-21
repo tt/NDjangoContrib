@@ -1,4 +1,4 @@
-﻿using System;
+﻿using Microsoft.FSharp.Core;
 
 namespace NDjango.Contrib.Filters.Humanize
 {
@@ -11,7 +11,35 @@ namespace NDjango.Contrib.Filters.Humanize
 
 		public object Perform(object __p1)
 		{
-			throw new NotImplementedException();
+			Tuple<bool, int> tuple = Utilities.get_int(__p1);
+
+			if (!tuple.Item1)
+			{
+				return string.Empty;
+			}
+
+			string numberString = tuple.Item2.ToString();
+
+			string suffix;
+
+			if (numberString.EndsWith("1") && !numberString.EndsWith("11"))
+			{
+				suffix = "st";
+			}
+			else if (numberString.EndsWith("2") && !numberString.EndsWith("12"))
+			{
+				suffix = "nd";
+			}
+			else if (numberString.EndsWith("3") && !numberString.EndsWith("13"))
+			{
+				suffix = "rd";
+			}
+			else
+			{
+				suffix = "th";
+			}
+
+			return string.Format("{0}{1}", tuple.Item2, suffix);
 		}
 
 		#endregion
