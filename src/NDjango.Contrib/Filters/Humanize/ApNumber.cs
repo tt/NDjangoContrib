@@ -2,6 +2,9 @@
 
 namespace NDjango.Contrib.Filters.Humanize
 {
+	/// <remarks>
+	/// http://docs.djangoproject.com/en/dev/ref/contrib/humanize/#apnumber
+	/// </remarks>
 	public class ApNumber : Interfaces.ISimpleFilter
 	{
 		#region ISimpleFilter Members
