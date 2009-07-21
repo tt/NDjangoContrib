@@ -55,6 +55,9 @@
   <ItemGroup>
     <Compile Include="Filters\Humanize\ApNumberFilter.cs" />
     <Compile Include="Filters\Humanize\IntCommaFilter.cs" />
+    <Compile Include="Filters\Humanize\IntWordFilter.cs" />
+    <Compile Include="Filters\Humanize\NaturalDayFilter.cs" />
+    <Compile Include="Filters\Humanize\OrdinalFilter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
